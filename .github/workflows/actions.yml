@@ -17,7 +17,7 @@ jobs:
       - name: List Files after checkout
         run: |
           pwd
-          ls
+          ls -a
     # For actions we can specify commit, version, and or branch(Not always the best)
       - name: Simple JS Action
         id: greet
