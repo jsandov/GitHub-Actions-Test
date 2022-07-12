@@ -10,6 +10,14 @@ jobs:
         run: |
           pwd
           ls
+# Checking out repo using github action checkout
+      - name: Checkout repo
+        uses: actions/checkout@v3
+# Listing all files after checkout 
+      - name: List Files after checkout
+        run: |
+          pwd
+          ls
     # For actions we can specify commit, version, and or branch(Not always the best)
       - name: Simple JS Action
         id: greet
